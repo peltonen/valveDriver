@@ -1,55 +1,54 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
-{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red13\green73\blue189;\red0\green0\blue0;\red255\green255\blue255;
-}
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red13\green73\blue189;}
 \margl1440\margr1440\vieww17940\viewh15520\viewkind0
 \deftab720
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\b\fs30 \cf0 Valve Driver v4.1
 \b0  
 \b Board URL
 \b0  - {\field{\*\fldinst{HYPERLINK "http://bit.ly/1dflpys"}}{\fldrslt \cf2 \ul \ulc2 http://bit.ly/1dflpys}}
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 This board allows controlling of 4 solenoid valves (or other high-current devices) from a computer. On receiving a logic HI on an input channel, the board will bring the pin of the output channel to the power supply voltage. Outputs are current limited to protect against short circuits.
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\b\fs30 \cf0 There are two ways to use the board:
 \f1\b0\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\fi960\sl340\ql\qnatural
+\pard\pardeftab720\fi960\sl340
 
 \f0\fs30 \cf0 (1) Valves connected to each output can be triggered by supplying a 5V signal to the corresponding input.
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\fi960\sl340\ql\qnatural
+\pard\pardeftab720\fi960\sl340
 
 \f0\fs30 \cf0 (2) A programmable USB Arduino prototyping board ({\field{\*\fldinst{HYPERLINK "http://www.arduino.cc/"}}{\fldrslt \cf2 \ul \ulc2 www.arduino.cc}}), can be attached to the bottom of the board, and outputs of the Arduino are connected to the input lines. (A BNC connector for a TRIGGER input for the Arduino is also provided.) Thus, sketches running on the Arduino can trigger valve openings.
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\b\fs30 \cf0 Arduino Pin Out:
 \f1\b0\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 Programming Arduino is beyond the scope of this document, but the key facts you\'92ll need are:
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 TRIGGER 	- Arduino Pin D2
 \f1\fs24 \
@@ -65,441 +64,440 @@
 
 \f0\fs30 IN4		- Arduino Pin D9 
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 Also note that the Arduino uses the same 2.1 mm power connector, but will be destroyed by 24V. So 
 \i\b don\'92t plug a 24 V supply into your Arduino by accident
 \b0 . 
 \f1\i0\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\b\fs30 \cf0 Building the Board:
 \f1\b0\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 The Wilson Lab has some extras in storage. If you only want 1 or 2, contact them to see if they\'92ll give you one. Otherwise you\'92ll need to make your own. A batch of 5 can be made in 2 weeks, for about $100, and all the files you\'92ll need are provided.
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 Files are here:
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 {\field{\*\fldinst{HYPERLINK "https://drive.google.com/file/d/0B7uBwBiCIUHtYlAyUGN5XzAydUE/edit?usp=sharing"}}{\fldrslt 
 \f0\fs30 \cf2 \ul \ulc2 https://github.com/joebell/valveDriver\
-}}\pard\pardeftab720\sl340\ql\qnatural
+}}\pard\pardeftab720\sl340
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
 
-\f0\fs30 \cf0 The git repo contains the Eagle schematics and board layout, as well as a directory with all of the gerber files necessary for fabrication. Of note are:
+\f0\fs30 The git repo contains the Eagle schematics and board layout, as well as a directory with all of the gerber files necessary for fabrication. Of note are:
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
 \
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
-\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 .top
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Top copper traces
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
-\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 .bot
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Bottom copper traces
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
-\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 .oln
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Board outline
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
-\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 .slk
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Top silkscreen
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
-\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 .smt
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Top soldermask
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
-\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 .smb
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Bottom soldermask
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
-\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth1300\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3620\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 .drd
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 NC drill data
 \f1\fs24 \cell \lastrow\row
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 You can upload these to a PCB fab house to have a small number of boards made. I like Sunstone and Silvercircuits.
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 You\'92ll also need to order parts, most of which are available at Digikey. For each 4 ch. board you\'92ll need:
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\b\fs30 \cf0 Part Desc.
 \f1\b0\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\b\fs30 \cf0 Digikey Part #
 \f1\b0\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\b\fs30 \cf0 Qty (each)
 \f1\b0\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Arduino UNO
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 1050-1041-ND 
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 1050-1041-ND 
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 1
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Power Jack
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 CP-102A-ND
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 CP-102A-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 1
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 BNC Jack
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 A32261-ND
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 5 - 9
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Breakaway header
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 WM50018-36-ND
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 WM50018-36-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 1
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 IRF530
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 IRF530PBF-ND
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 IRF530PBF-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 4
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 IRF9530
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 IRF9530PBF-ND
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 IRF9530PBF-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 4
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 2N3906
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 2N3906-APCT-ND
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 2N3906-APCT-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 4
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 1N4004
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 1N4004DICT-ND
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 1N4004DICT-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 4
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 .5 ohm
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 WNBR50FECT-ND 
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 WNBR50FECT-ND 
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 4
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 100 kohm
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 CF14JT100KCT-ND 
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 CF14JT100KCT-ND 
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 4
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 10 kohm
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 CF14JT10K0CT-ND
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 CF14JT10K0CT-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 4
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Standoffs 4-40
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 2031K-ND or 4806K-ND 
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 2031K-ND or 4806K-ND 
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 4
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Screws, 4-40
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 (McMaster Carr)
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 (McMaster Carr)
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 4
 \f1\fs24 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
-\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
-\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\clvertalt \clshdrawnil \clwWidth4020\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth5600\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth1960\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf0 \clbrdrl\brdrs\brdrw20\brdrcf0 \clbrdrb\brdrs\brdrw20\brdrcf0 \clbrdrr\brdrs\brdrw20\brdrcf0 \clpadt140 \clpadl140 \clpadb140 \clpadr140 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 Power supply (24V)
 \f1\fs24 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\pard\intbl\itap1\pardeftab720\sl300
 
-\f0\fs30 \cf0 \cb4 237-1460-ND
-\f1\fs24 \cb1 \cell 
-\pard\intbl\itap1\pardeftab720\sl300\ql\qnatural
+\f0\fs30 \cf0 237-1459-ND
+\f1\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\sl300
 
 \f0\fs30 \cf0 1
 \f1\fs24 \cell \lastrow\row
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 To build the board, stuff appropriate parts into the board, solder them. \'a0Note that the transistors (Q1-12) and the diodes (D1-4) are polarized, so line them up with the silkscreen correctly. You\'92ll also need to snap the breakaway headers into appropriate lengths.
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\b\fs30 \cf0 Finally, add a wire across R13 (in the upper left corner of the board) to reference the power supply ground to signal ground. 
 \b0 You can allow the grounds to float relative to each other by raising the value of this resistor, but this shouldn\'92t be necessary.
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 \uc0\u8539 \'94 holes are supplies for mounting with standoffs. \'a0I\'92d suggest 1\'94 so you have clearance for an Arduino.
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\b\fs30 \cf0 Modifications
 \f1\b0\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 If you\'92re not using some feature of the board (some channels, channel BNC inputs, the arduino headers) you can leave those features off without hurting anything. \'a0
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 If you want to change the current limit for each channel, choose a different value for R3,6,9,12.
 \f1\fs24 \
-\pard\pardeftab720\ql\qnatural
+\pard\pardeftab720
 \cf0 \
-\pard\pardeftab720\sl340\ql\qnatural
+\pard\pardeftab720\sl340
 
 \f0\fs30 \cf0 The board will run with supply voltages between about 6V and 48V, just use a different power supply. You might be able to go higher, but be careful.
 \f1\fs24 \
